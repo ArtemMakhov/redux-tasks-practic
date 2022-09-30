@@ -1,10 +1,13 @@
 import { Task } from "components/Task/Task";
 import css from "./TaskList.module.css";
+import { useTasks } from "hooks/useTasks";
 
 export const TaskList = () => {
+  const tasks = useTasks();
+
   return (
     <ul className={css.list}>
-      {[].map(task => (
+      {tasks.map(task => (
         <li className={css.listItem} key={task.id}>
           <Task task={task} />
         </li>
