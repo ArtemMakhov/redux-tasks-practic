@@ -1,6 +1,6 @@
 import { Button } from 'components/Button/Button';
 import { useDispatch } from 'react-redux';
-import { deleteAllCompleted, toggleAllCompleted } from 'redux/actions';
+import { deleteAllCompleted, toggleAllCompleted } from 'redux/tasksSlice';
 
 
 export const Actions = () => {
